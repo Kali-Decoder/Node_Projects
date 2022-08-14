@@ -1,0 +1,32 @@
+<%- include("./partials/header") %>  
+<body>
+    <%- include("./partials/navbar") %>  
+    <div class="container">
+       <div class="row mt-2">
+        <div class="col-md-10 col-10 col-lg-10 mx-auto">
+               <h3 class="text-left" style="font-family: 'Kaisei HarunoUmi', serif; letter-spacing: .2rem; text-transform: uppercase;">Compose:</h3>
+           </div>
+       </div>
+       <form action="/compose" method="post">
+        <div class="row mt-1">
+            <div class="col-md-10 col-10 col-lg-10 mx-auto">
+                <label for="" class="form-label text-info"><strong>Title:</strong></label>
+                <input type="text" name="title" placeholder="Enter Your Title" id="" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-md-10 col-10 col-lg-10 mx-auto">
+                <label for="" class="form-label text-info"><strong>Post:</strong></label>
+                <textarea name="post"  class="form-control" placeholder="Enter Your Blog Data" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row mt-3">
+         <div class="col-md-10 col-10 col-lg-10 mx-auto">
+             <button class="btn-dark px-3 py-1" style="border-radius: 0px;"  type="submit">Publish</button>
+         </div>
+        </div>
+       </form>
+    </div>
+    <%- include("./partials/footer") %>   
+</body>
+</html>

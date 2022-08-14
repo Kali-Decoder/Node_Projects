@@ -1,0 +1,28 @@
+<%- include("./partials/header") %>  
+<body>
+    <%- include("./partials/navbar") %>  
+    <div class="container " style="margin-bottom: 80px;">
+        <div class="row mt-1">
+            <div class="col-md-10 mt-2 col-10 col-sm-10 mx-auto">
+                <h3 class="text-left" style="font-family: 'Kaisei HarunoUmi', serif; letter-spacing: .2rem; text-transform: uppercase;">Your Blogs:</h3>
+            </div>
+        </div>
+        <div class="row mt-4">
+           <% posts.map((post)=>{ %>
+
+            <div class="col-md-10 col-10 mt-4  col-sm-10 mx-auto" style="border: 1px solid black; padding: 20px;">
+                <h3 class="text-center text-capitalize " style="font-family: 'Kaisei HarunoUmi', serif;font-weight: 700; color: #f72585; ">❣️ <%= post.title %> 🖊️</h3>
+                <p class="text-left mt-3"><%= post.content.substring(0,200) %>...<a href="/posts/<%= post.title %>">Read More</a> </p>
+            </div>
+
+          <% })%>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-10 mt-2 col-10 col-sm-10 mx-auto">
+                <a href="/compose"><button class="btn-dark px-3 py-1" style="border-radius: 0px;">Compose</button></a>
+            </div>
+        </div>
+    </div>
+    <%- include("./partials/footer") %>   
+</body>
+</html>
