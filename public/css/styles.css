@@ -1,0 +1,63 @@
+
+body{
+    background-color: #a2d2ff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0096c7;
+    color: white;
+    text-align: center;
+  }
+  .navbar
+  {
+      background-color: #00b4d8;
+  }
+  .nav-link
+{
+    color: white;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+}
+.navbar-brand
+{
+    color: rgb(268,26,98);
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: .3rem;
+    word-spacing: .1rem;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: black;
+
+}
+.nav-link:active
+{
+    color: black !important;
+}
+input[type='search']
+{
+    border: 3px solid rgb(268,26,98);
+    border-radius:60px ;
+    
+}
+input::placeholder,textarea::placeholder
+{
+    color: black;
+    font-weight: 600;
+}
+button[type='submit']
+{
+    background-color: rgb(268,26,98);
+    border-radius:60px ;
+    color: white;
+    font-weight: 700;
+    
+}
